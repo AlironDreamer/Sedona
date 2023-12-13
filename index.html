@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Welcome to the gorgeous Sedona</title>
+  <title>Добро пожаловать в Седону!</title>
 </head>
 <body class="page">
 <header class="page__header page-header">
@@ -12,7 +12,7 @@
     </a>
     <ul class="main-navigation__site-navigation site-navigation">
       <li class="site-navigation__item">
-        <a href="#" class="site-navigation__link site-navigation__link--current">Главная</a>
+        <a href="#" class="site-navigation__link site-navigation__link--active">Главная</a>
       </li>
       <li class="site-navigation__item">
         <a href="#" class="site-navigation__link">О Седоне</a>
@@ -22,14 +22,15 @@
       </li>
     </ul>
     <ul class="main-navigation__user-navigation user-navigation">
-      <li class="user-navigation__item user-navigation-item">
-        <a href="#" class="user-navigation-item__link">
-          <span class="user-navigation__description">Поиск</span>
+      <li class="user-navigation__item search">
+        <a href="#" class="search__link">
+          <span class="search__description">Поиск</span>
         </a>
       </li>
-      <li class="user-navigation__item">
-        <a href="#" class="user-navigation__link">
-          <span class="user-navigation__description">Поставить лайк</span>
+      <li class="user-navigation__item user-reaction">
+        <a href="#" class="user-reaction__link">
+          <span class="user-reaction__description">Поставить лайк</span>
+          <span class="user-reaction__counter">12</span>
         </a>
       </li>
       <li class="user-navigation__item">
@@ -52,7 +53,7 @@
         <ul class="advantages-list__description-list description-list">
           <li class="description-list__item description-item">
             <h4 class="description-item__title">Жильё</h4>
-            <p class="description-item__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <p class="description-item__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="description-list__item description-item">
             <h4 class="description-item__title">Еда</h4>
@@ -97,11 +98,11 @@
         <span class="visually-hidden">Ваш e-mail</span>
         <input class='form-field__input input' type='text' name='subscription' placeholder="Ваш e-mail">
       </label>
-      <button class="button button--accent">Подписаться</button>
+      <button class="button button--accent" type="submit">Подписаться</button>
     </form>
   </section>
 </main>
-<footer class="page-footer">
+<footer class="page__footer page-footer">
   <ul class="page-footer__social-list social-list">
     <li class="social-list__item">
       <a class="social-list__link">
@@ -119,9 +120,9 @@
       </a>
     </li>
   </ul>
-  <a class='page-footer__contact-phone' href="tel:+78128121212">+7 (812) 812-12-12</a>
-  <a class="page-footer__developer" href="https://htmlacademy.ru">
-    <img class="page-footer__developer-logo" src="" alt="Разработано HTML Academy">
+  <a class='page-footer__contact-phone contact-phone' href="tel:+78128121212">+7 (812) 812-12-12</a>
+  <a class="page-footer__developer copyright" href="https://htmlacademy.ru">
+    <img class="copyright__developer-logo" src="" alt="Разработано HTML Academy">
   </a>
 </footer>
 </body>

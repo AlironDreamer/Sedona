@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Фильтр гостиниц</title>
+</head>
+<body>
+<section class="catalog-filters">
+  <h2 class="visually-hidden">Список фильтров гостиниц</h2>
+  <form class="catalog-filters__form form" action="https://echo.htmlacademy.ru" method="get">
+    <fieldset class="form__filter-group">
+      <legend class="form__filter-title">Инфраструктура:</legend>
+      <ul class="form__control-list">
+        <li class="form__control-item">
+          <label class="form__control-wrapper">
+            <input class="form__control-input input input--checked" type="checkbox" name="Бассейн" checked>
+            <span class="form__control-mark"></span>
+            <span class="form__control-description">Бассейн</span>
+          </label>
+          <label class="form__control-wrapper">
+            <input class="form__control-input input input--checked" type="checkbox" name="Парковка" checked>
+            <span class="form__control-mark"></span>
+            <span class="form__control-description">Парковка</span>
+          </label>
+          <label class="form__control-wrapper">
+            <input class="form__control-input input" type="checkbox" name="Wi-Fi">
+            <span class="form__control-mark"></span>
+            <span class="form__control-description">Wi-Fi</span>
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="form__filter-group">
+      <legend class="form__filter-title">Тип жилья:</legend>
+      <ul class="form__control-list">
+        <li class="form__control-item">
+          <label class="form__control-wrapper">
+            <input class="form__control-input input input--checked" type="radio" name="hotel-group" value="hotel"
+                   checked>
+            <span class="form__control-mark"></span>
+            <span class="form__control-description">Гостиница</span>
+          </label>
+          <label class="form__control-wrapper">
+            <input class="form__control-input input" type="radio" name="hotel-group" value="motel">
+            <span class="form__control-mark"></span>
+            <span class="form__control-description">Мотель</span>
+          </label>
+          <label class="form__control-wrapper">
+            <input class="form__control-input input" type="radio" name="hotel-group" value="apartments">
+            <span class="form__control-mark"></span>
+            <span class="form__control-description">Апартаменты</span>
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="form__filter-group">
+      <legend class="form__filter-title">Стоимость, ₽:</legend>
+      <button class="button button--range-min" type="button">
+        <span class="visually-hidden">Изменить минимальную цену</span>
+      </button>
+      <button class="button button--range-max" type="button">
+        <span class="visually-hidden">Изменить максимальную цену</span>
+      </button>
+      <label class="form__filter-label">
+        от<input class="form__filter-input input" type="number" name="min-price"> ₽
+      </label>
+      <label class="form__filter-label">
+        до<input class="form__filter-input input" type="number" name="max-price"> ₽
+      </label>
+    </fieldset>
+    <button class="button button--accent" type="submit">Применить</button>
+    <button class="button button--reset" type="submit">Сбросить</button>
+  </form>
+</section>
+</body>
+</html>
