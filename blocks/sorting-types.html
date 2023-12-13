@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Сортировка гостиниц</title>
+</head>
+<body>
+  <section class="sorting-types">
+    <h2 class="visually-hidden">Результаты поиска</h2>
+    <p class="sorting-types__text-result">Найдено гостиниц: 38</p>
+    <form class="sorting-types__form form">
+      <label class="visually-hidden">Сортировка</label>
+      <select class="form__sorting-select sorting-select">
+        <option class='sorting-select__option' value="cheap">Сначала дешёвое</option>
+        <option class="sorting-select__option" value="expensive">Сначала дорогое</option>
+        <option class='sorting-select__option' value="popular">Сначала популярное</option>
+      </select>
+      <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
+      <a href="#" class="button button--display-grid">
+        <span class="visually-hidden">Показать карточками</span>
+      </a>
+      <a href="#" class="button button--display-slide">
+        <span class="visually-hidden">Показать слайдами</span>
+      </a>
+      <a href="#" class="button button--display-list">
+        <span class="visually-hidden">Показать списком</span>
+      </a>
+    </form>
+  </section>
+</body>
+</html>
