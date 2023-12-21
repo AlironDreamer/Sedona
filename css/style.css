@@ -1,0 +1,23 @@
+/*Блоки-хелперы*/
+@import "helper/fonts.css";
+@import "helper/visually-hidden.css";
+@import "helper/wrappers.css";
+
+/*Основные блоки*/
+@import "blocks/page.css";
+@import "blocks/page-header.css";
+@import "blocks/site-navigation.css";
+@import "blocks/button.css";
+@import "blocks/advantages.css";
+@import "blocks/advantage.css";
+@import "blocks/hotel-offer.css";
+@import "blocks/subscription-offer.css";
+@import "blocks/page-footer.css";
+
+@import "blocks/inner-header.css";
+@import "blocks/breadcrumbs.css";
+@import "blocks/filter-form.css";
+@import "blocks/sorting-types.css";
+@import "blocks/product-card.css";
+@import "blocks/pagination-form.css";
+

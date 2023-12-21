@@ -1,0 +1,32 @@
+.subscription-offer {
+  color: #000000;
+}
+
+.subscription-offer__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subscription-offer__description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.subscription-form__input::placeholder {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.subscription-offer--with-background {
+  color: #ffffff;
+  background-image: url("../../images/other/subscribe_bg.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,20 @@
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #756257;
+  border: none;
+}
+
+.button--accent {
+  background-color: #83B3D3;
+}
+
+.button--disabled {
+  color: #000000;
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,19 @@
+.product-card__link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-card__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+}
+
+.product-card__type, .product-card__price {
+  line-height: 24px;
+}
+
+.product-card__rating {
+  line-height: 21px;
+  background-color: #f2f2f2;
+}
