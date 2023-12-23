@@ -1,5 +1,6 @@
 .subscription-offer {
   color: #000000;
+  text-align: center;
 }
 
 .subscription-offer__title {
@@ -7,13 +8,11 @@
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .subscription-offer__description {
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
 }
 
 .subscription-form__input::placeholder {

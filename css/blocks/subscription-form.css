@@ -1,0 +1,9 @@
+.subscription-form__input {
+  font-family: inherit;
+  font-size: 18px;
+  background-color: #f2f2f2;
+}
+
+.subscription-form__button {
+  font-size: 20px;
+}

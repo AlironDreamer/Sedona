@@ -1,4 +1,5 @@
 .button {
+  font-family: inherit;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -12,6 +13,12 @@
 
 .button--accent {
   background-color: #83B3D3;
+}
+
+.button--reset {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: none;
 }
 
 .button--disabled {

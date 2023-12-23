@@ -1,6 +1,10 @@
+.main-wrapper {
+  flex-grow: 1;
+}
+
 .catalog-wrapper {
   color: #ffffff;
   background-image: url("../../images/other/catalog_filters_bg.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }

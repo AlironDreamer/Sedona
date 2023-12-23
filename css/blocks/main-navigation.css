@@ -1,0 +1,19 @@
+.main-navigation {
+  display: flex;
+  padding: 0 70px;
+}
+
+.main-navigation__logo {
+  margin-right: 30px;
+}
+
+.main-navigation__site-navigation {
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+}
+
+.main-navigation__user-navigation {
+  margin: 0;
+  padding: 0;
+}
