@@ -5,7 +5,7 @@
   <title>Гостиницы Седоны</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page page--inner-page">
+<body class="page page--align page--inner-page">
 <header class="page__header page-header">
   <nav class="page-header__main-navigation main-navigation">
     <a href="index.html" class="main-navigation__logo logo">
@@ -40,7 +40,7 @@
     </ul>
   </nav>
 </header>
-<main class="page__content">
+<main class="page__content main-wrapper">
   <div class="catalog-wrapper">
     <header class="inner-header">
       <h1 class="inner-header__title">Гостиницы Седоны</h1>
@@ -67,11 +67,15 @@
                 <span class="filter-form__control-mark"></span>
                 <span class="filter-form__control-description">Бассейн</span>
               </label>
+            </li>
+            <li class="filter-form__control-item">
               <label class="filter-form__control-wrapper">
                 <input class="filter-form__control-input input input--checked" type="checkbox" name="Парковка" checked>
                 <span class="filter-form__control-mark"></span>
                 <span class="filter-form__control-description">Парковка</span>
               </label>
+            </li>
+            <li class="filter-form__control-item">
               <label class="filter-form__control-wrapper">
                 <input class="filter-form__control-input input" type="checkbox" name="Wi-Fi">
                 <span class="filter-form__control-mark"></span>
@@ -90,11 +94,15 @@
                 <span class="filter-form__control-mark"></span>
                 <span class="filter-form__control-description">Гостиница</span>
               </label>
+            </li>
+            <li class="filter-form__control-item">
               <label class="filter-form__control-wrapper">
                 <input class="filter-form__control-input input" type="radio" name="hotel-group" value="motel">
                 <span class="filter-form__control-mark"></span>
                 <span class="filter-form__control-description">Мотель</span>
               </label>
+            </li>
+            <li class="filter-form__control-item">
               <label class="filter-form__control-wrapper">
                 <input class="filter-form__control-input input" type="radio" name="hotel-group" value="apartments">
                 <span class="filter-form__control-mark"></span>
@@ -103,19 +111,19 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="catalog-form__filter-group">
-          <legend class="catalog-form__filter-title">Стоимость, ₽:</legend>
+        <fieldset class="filter-form__filter-group">
+          <legend class="filter-form__filter-title">Стоимость, ₽:</legend>
           <button class="button button--range-min" type="button">
             <span class="visually-hidden">Изменить минимальную цену</span>
           </button>
           <button class="button button--range-max" type="button">
             <span class="visually-hidden">Изменить максимальную цену</span>
           </button>
-          <label class="catalog-form__filter-label">
-            от<input class="form__filter-input input" type="number" name="min-price"> ₽
+          <label class="filter-form__filter-label">
+            от<input class="filter-form__range-input input" type="number" name="min-price"> ₽
           </label>
-          <label class="catalog-form__filter-label">
-            до<input class="form__filter-input input" type="number" name="max-price"> ₽
+          <label class="filter-form__filter-label">
+            до<input class="filter-form__range-input input" type="number" name="max-price"> ₽
           </label>
         </fieldset>
         <button class="button button--accent" type="submit">Применить</button>
@@ -126,12 +134,12 @@
   <section class="sorting-types">
     <h2 class="visually-hidden">Результаты поиска</h2>
     <p class="sorting-types__text-result">Найдено гостиниц: 38</p>
-    <form class="sorting-types__form form">
+    <form class="sorting-types__form sorting-form form">
       <label class="visually-hidden">Сортировка</label>
-      <select class="form__sorting-select sorting-select">
-        <option class='sorting-select__option' value="cheap">Сначала дешёвое</option>
-        <option class="sorting-select__option" value="expensive">Сначала дорогое</option>
-        <option class='sorting-select__option' value="popular">Сначала популярное</option>
+      <select class="sorting-form__select">
+        <option class='sorting-form__select-option' value="cheap">Сначала дешёвое</option>
+        <option class="sorting-form__select-option" value="expensive">Сначала дорогое</option>
+        <option class='sorting-form__select-option' value="popular">Сначала популярное</option>
       </select>
       <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
       <a href="#" class="button button--display-grid">
