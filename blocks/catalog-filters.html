@@ -17,11 +17,15 @@
             <span class="filter-form__control-mark"></span>
             <span class="filter-form__control-description">Бассейн</span>
           </label>
+        </li>
+        <li class="filter-form__control-item">
           <label class="filter-form__control-wrapper">
             <input class="filter-form__control-input input input--checked" type="checkbox" name="Парковка" checked>
             <span class="filter-form__control-mark"></span>
             <span class="filter-form__control-description">Парковка</span>
           </label>
+        </li>
+        <li class="filter-form__control-item">
           <label class="filter-form__control-wrapper">
             <input class="filter-form__control-input input" type="checkbox" name="Wi-Fi">
             <span class="filter-form__control-mark"></span>
@@ -35,16 +39,21 @@
       <ul class="filter-form__control-list">
         <li class="filter-form__control-item">
           <label class="filter-form__control-wrapper">
-            <input class="filter-form__control-input input input--checked" type="radio" name="hotel-group" value="hotel"
+            <input class="filter-form__control-input input input--checked" type="radio" name="hotel-group"
+                   value="hotel"
                    checked>
             <span class="filter-form__control-mark"></span>
             <span class="filter-form__control-description">Гостиница</span>
           </label>
+        </li>
+        <li class="filter-form__control-item">
           <label class="filter-form__control-wrapper">
             <input class="filter-form__control-input input" type="radio" name="hotel-group" value="motel">
             <span class="filter-form__control-mark"></span>
             <span class="filter-form__control-description">Мотель</span>
           </label>
+        </li>
+        <li class="filter-form__control-item">
           <label class="filter-form__control-wrapper">
             <input class="filter-form__control-input input" type="radio" name="hotel-group" value="apartments">
             <span class="filter-form__control-mark"></span>
@@ -55,21 +64,29 @@
     </fieldset>
     <fieldset class="filter-form__filter-group">
       <legend class="filter-form__filter-title">Стоимость, ₽:</legend>
-      <button class="button button--range-min" type="button">
-        <span class="visually-hidden">Изменить минимальную цену</span>
-      </button>
-      <button class="button button--range-max" type="button">
-        <span class="visually-hidden">Изменить максимальную цену</span>
-      </button>
-      <label class="filter-form__filter-label">
-        от<input class="filter-form__range-input input" type="number" name="min-price"> ₽
-      </label>
-      <label class="filter-form__filter-label">
-        до<input class="filter-form__range-input input" type="number" name="max-price"> ₽
-      </label>
+      <div class="filter-form__range">
+        <div class="filter-form__slider-bar">
+          <button class="button button--range-min" type="button">
+            <span class="visually-hidden">Изменить минимальную цену</span>
+          </button>
+          <button class="button button--range-max" type="button">
+            <span class="visually-hidden">Изменить максимальную цену</span>
+          </button>
+        </div>
+        <label class="filter-form__filter-label">
+          <span class="filter-form__range-text">от</span>
+          <input class="filter-form__range-input input" type="number" name="min-price">
+        </label>
+        <label class="filter-form__filter-label">
+          <span class="filter-form__range-text">до</span>
+          <input class="filter-form__range-input input" type="number" name="max-price">
+        </label>
+      </div>
     </fieldset>
-    <button class="button button--accent" type="submit">Применить</button>
-    <button class="button button--reset" type="submit">Сбросить</button>
+    <div class="filter-form__buttons-group">
+      <button class="filter-form__button button button--accent" type="submit">Применить</button>
+      <button class="filter-form__button button button--reset" type="submit">Сбросить</button>
+    </div>
   </form>
 </section>
 </body>
