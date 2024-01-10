@@ -1,6 +1,5 @@
 .advantage {
   text-align: center;
-  background-color: #ffffff;
 }
 
 .advantage__title {
@@ -9,22 +8,15 @@
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+  padding-top: 97px;
+  margin-top: 0;
+  margin-bottom: 81px;
 }
 
-.advantage--accent {
-  background-color: #83B3D3;
-}
-
-.advantage--accent .advantage__title, .advantage--accent .advantage__description {
-  color: #ffffff;
-}
-
-.advantage--edge {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.advantage--middle {
-  background-color: rgba(131, 179, 211, 0.20);
+.advantage__description {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 87px;
 }
 
 

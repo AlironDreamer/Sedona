@@ -1,5 +1,11 @@
 .inner-header__title {
+  margin-top: 0;
+  margin-bottom: 5px;
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
+}
+
+.inner-header__breadcrumbs {
+  margin: 0;
 }

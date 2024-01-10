@@ -1,12 +1,12 @@
 .page-footer {
   display: flex;
   justify-content: space-between;
-  padding: 0 72px;
+  align-items: center;
+  padding: 40px 62px 30px 62px;
 }
 
 .page-footer__social-list {
   margin: 0;
-  padding: 0;
 }
 
 .page-footer__contact-phone {

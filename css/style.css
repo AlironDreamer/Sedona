@@ -6,10 +6,14 @@
 /*Основные блоки*/
 @import "blocks/page.css";
 @import "blocks/page-header.css";
+@import "blocks/logo.css";
+@import "blocks/search.css";
+@import "blocks/user-reaction.css";
 @import "blocks/main-navigation.css";
 @import "blocks/site-navigation.css";
 @import "blocks/user-navigation.css";
 @import "blocks/button.css";
+@import "blocks/welcome-promo.css";
 @import "blocks/advantages-list.css";
 @import "blocks/advantages.css";
 @import "blocks/advantage.css";
@@ -17,13 +21,19 @@
 @import "blocks/subscription-offer.css";
 @import "blocks/subscription-form.css";
 @import "blocks/page-footer.css";
+@import "blocks/social-list.css";
+@import "blocks/contact-phone.css";
+@import "blocks/copyright.css";
 
 @import "blocks/inner-header.css";
 @import "blocks/breadcrumbs.css";
 @import "blocks/filter-form.css";
+@import "blocks/sorting-form.css";
 @import "blocks/sorting-types.css";
 @import "blocks/catalog.css";
+@import "blocks/product-list.css";
 @import "blocks/product-card.css";
 @import "blocks/pagination-form.css";
+@import "blocks/pagination-list.css";
 @import "blocks/pagination.css";
 

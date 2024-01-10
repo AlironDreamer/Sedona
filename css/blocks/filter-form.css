@@ -1,9 +1,62 @@
+.filter-form {
+  display: grid;
+  grid-template-columns: 181px 282px 1fr 160px;
+  column-gap: 30px;
+  justify-content: start;
+}
+
+.filter-form__filter-group {
+  margin: 0;
+  padding: 0;
+}
+
+.filter-form__filter-group:last-of-type {
+  margin-right: 51px;
+}
+
 .filter-form__filter-title {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
 }
 
+.filter-form__control-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .filter-form__control-description {
   line-height: 24px;
+}
+
+.filter-form__range {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.filter-form__filter-label {
+  display: grid;
+  grid-template-columns: 1fr 44px;
+  grid-row: 1 / 2;
+}
+
+.filter-form__range-text {
+  grid-column: -2 / -1;
+  grid-row: 1 / 2;
+  opacity: 0.3;
+}
+
+.filter-form__range-input {
+  width: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  font-family: inherit;
+  background-color: transparent;
+}
+
+.filter-form__buttons-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

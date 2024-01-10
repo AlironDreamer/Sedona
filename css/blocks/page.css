@@ -2,6 +2,10 @@ html {
   height: 100%;
 }
 
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -17,4 +21,8 @@ html {
 
 .page--align {
   margin: 0 auto;
+}
+
+.page__content {
+  margin-top: -4px;
 }

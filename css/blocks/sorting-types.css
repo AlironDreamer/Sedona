@@ -1,6 +1,18 @@
+.sorting-types {
+  display: flex;
+  /*justify-content: space-between;*/
+  padding-top: 44px;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-bottom: 53px;
+}
+
 .sorting-types__text-result {
   font-size: 30px;
   font-weight: 700;
   line-height: 39px;
   color: #000000;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
 }

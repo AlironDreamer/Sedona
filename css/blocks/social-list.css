@@ -1,0 +1,19 @@
+.social-list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 182px;
+  list-style-type: none;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.social-list__link {
+  display: block;
+  min-width: 18px;
+
+  padding: 10px;
+}
+
+.social-list__item:nth-child(4) {
+  margin-right: 0;
+}

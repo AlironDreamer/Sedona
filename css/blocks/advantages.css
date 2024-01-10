@@ -1,3 +1,7 @@
+.advantages {
+  padding-top: 63px;
+}
+
 .advantages__title {
   font-size: 30px;
   line-height: 36px;
@@ -5,10 +9,21 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin: 0 240px 31px;
 }
 
 .advantages__description {
   font-size: 22px;
   line-height: 36px;
   text-align: center;
+  margin: 0 240px 80px;
+}
+
+.advantages__list {
+  margin: 0;
+}
+
+.advantages-list__image {
+  max-width: 100%;
+  height: auto;
 }

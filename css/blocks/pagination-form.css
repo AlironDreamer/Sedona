@@ -1,3 +1,7 @@
-.pagination-form__label {
+.pagination-form {
+  display: flex;
+}
 
+.pagination-form__label {
+  margin-right: 51px;
 }

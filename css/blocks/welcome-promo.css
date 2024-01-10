@@ -1,0 +1,12 @@
+.welcome-promo {
+  background-image: url("../../images/other/welcome_bg.jpg");
+  background-size: 100% auto;
+  padding-top: 51px;
+  padding-bottom: 82px;
+}
+
+.welcome-promo__slogan {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

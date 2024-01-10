@@ -1,3 +1,15 @@
-.pagination-list__button {
-  font-size: 20px;
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+.pagination__button {
+  min-width: 620px;
+}
+
+.pagination__list {
+  margin: 0;
 }

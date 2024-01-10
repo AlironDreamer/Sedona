@@ -1,11 +1,68 @@
 .advantages-list {
-  margin: 0;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-areas: "advantage1 advantage1 advantage1"
+                       "advantage2 advantage2 advantage2"
+                       "advantage3 advantage4 advantage5";
   padding: 0;
+  list-style-type: none;
+}
+
+.advantages-list__item:first-child {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-areas: "advtext1 advimg1 advimg1"
+                       "subadv subadv subadv";
+  grid-area: advantage1;
+}
+
+.advantages-list__item:first-child .advantages-list__block {
+  grid-area: advtext1;
+}
+
+.advantages-list__item:first-child .advantages-list__image {
+  grid-area: advimg1;
+}
+
+.advantages-list__item:first-child .advantages-list__additions {
+  grid-area: subadv;
+}
+
+
+.advantages-list__item:nth-child(2) {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-area: advantage2;
+}
+
+.advantages-list__item:nth-child(2) .advantages-list__image {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.advantages-list__item:nth-child(2) .advantages-list__block {
+  grid-column: 3 / 4;
+}
+
+.advantages-list__item:nth-child(3) {
+  grid-area: advantage3;
+}
+
+.advantages-list__item:nth-child(4) {
+  grid-area: advantage4;
+}
+
+.advantages-list__item:last-child {
+  grid-area: advantage5;
 }
 
 .advantages-list__additions {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  background-color: #ffffff;
 }
 
 .advantages-list__additions-title {
@@ -13,11 +70,35 @@
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+  color: #000000;
   text-align: center;
+  margin-top: 0;
+  padding-top: 184px;
+  margin-bottom: 20px;
 }
 
 .advantages-list__additions-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 79px;
   text-align: center;
+}
+
+.advantages-list__item--large {
+  background-color: #83B3D3;
+}
+
+
+.advantages-list__item--large .advantage__title, .advantages-list__item--large .advantage__description{
+  color: #ffffff;
+}
+
+.advantages-list__item--edge {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-list__item--middle {
+  background-color: rgba(131, 179, 211, 0.20);
 }
 
 .advantages-list__additions-item--edge {

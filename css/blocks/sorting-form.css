@@ -1,0 +1,38 @@
+.sorting-form {
+  /*display: flex;*/
+  display: grid;
+  grid-template-columns: 287px auto;
+  column-gap: 81px;
+}
+
+.sorting-form__select {
+  /*margin-right: 81px;*/
+}
+
+.sorting-form__types-list {
+  margin: 0;
+  padding: 0;
+  max-width: 212px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 8px;
+}
+
+.sorting-form__type {
+
+
+}
+
+.sorting-form__type-button {
+  display: block;
+  min-width: 16px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background: transparent;
+}
+
+

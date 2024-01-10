@@ -1,3 +1,23 @@
 .user-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
   max-width: 306px;
+}
+
+.user-navigation__link {
+  display: block;
+  min-width: 18px;
+  padding: 24px 12px;
+}
+
+
+.user-navigation__item:last-child {
+  margin-left: 20px;
+}
+
+.user-navigation__button {
+  display: block;
+  padding: 8px 15px;
 }
