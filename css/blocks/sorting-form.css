@@ -1,12 +1,53 @@
 .sorting-form {
-  /*display: flex;*/
   display: grid;
   grid-template-columns: 287px auto;
   column-gap: 81px;
 }
 
+.sorting-form__select-wrapper {
+  position: relative;
+}
+
+.sorting-form__select-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 22px;
+  right: 21px;
+  width: 12px;
+  height: 7px;
+  background-image: url("../../images/icons/select-dropdown-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .sorting-form__select {
-  /*margin-right: 81px;*/
+  margin: 0;
+  padding: 12px 55px 12px 19px;
+  min-width: 287px;
+  height: 48px;
+  font-family: inherit;
+  font-size: 18px;
+  color: #333333;
+  appearance: none;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.sorting-form__select-wrapper:hover .sorting-form__select {
+  border-color: #83B3D3;
+}
+
+.sorting-form__select-wrapper:active {
+  opacity: 0.3;
+}
+
+.sorting-form__select-wrapper:active .sorting-form__select {
+  opacity: 0.3;
+}
+
+.sorting-form__select:focus:not(:active) {
+  outline: none;
+  border-color: #83B3D3;
 }
 
 .sorting-form__types-list {
@@ -20,19 +61,26 @@
   row-gap: 8px;
 }
 
-.sorting-form__type {
-
-
-}
-
 .sorting-form__type-button {
   display: block;
+  width: 48px;
+  height: 48px;
   min-width: 16px;
   padding-top: 19px;
   padding-bottom: 19px;
   padding-left: 16px;
   padding-right: 16px;
-  background: transparent;
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
 }
 
+.sorting-form__type-button:hover, .sorting-form__type-button:focus {
+  background-color: transparent;
+  border-color: #83B3D3;
+}
+
+.sorting-form__type-button:active {
+  background-color: transparent;
+  border-color:#000000;
+}
 

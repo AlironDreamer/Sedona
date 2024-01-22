@@ -2,6 +2,51 @@
   display: flex;
 }
 
-.pagination-form__label {
+.pagination-select__label {
   margin-right: 51px;
+  align-self: center;
+}
+
+.pagination-select__wrapper {
+  position: relative;
+}
+
+.pagination-select__wrapper::after {
+  content: '';
+  position: absolute;
+  top: 22px;
+  right: 21px;
+  width: 12px;
+  height: 7px;
+  background-image: url("../../images/icons/select-dropdown-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.pagination-select__wrapper:hover .pagination-select__amount-select {
+  border-color: #83B3D3;
+}
+
+.pagination-select__wrapper:active {
+  opacity: 0.3;
+}
+
+.pagination-select__wrapper:active .pagination-select__amount-select {
+  opacity: 0.3;
+}
+
+.pagination-select__amount-select:focus:not(:active) {
+  outline: none;
+  border-color: #83B3D3;
+}
+
+.pagination-select__amount-select {
+  font-family: inherit;
+  font-size: 18px;
+  color: #333333;
+  padding: 13px 55px 12px 17px;
+  min-width: 160px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+  appearance: none;
 }

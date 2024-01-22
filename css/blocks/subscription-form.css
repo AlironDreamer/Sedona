@@ -4,11 +4,25 @@
 }
 
 .subscription-form__input {
+  padding: 17px 22px;
   width: 100%;
   font-family: inherit;
   font-size: 18px;
   background-color: #f2f2f2;
   border: none;
+  border-radius: 10px 0 0 10px;
+}
+
+.subscription-form__input:hover {
+  background-color: #E6E6E6;
+}
+
+.subscription-form__input:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.subscription-form__input--error:focus {
+  outline: 2px solid #FF5757;
 }
 
 .subscription-form__input::placeholder {
@@ -21,4 +35,5 @@
 
 .subscription-form__button {
   font-size: 20px;
+  border-radius: 0 10px 10px 0;
 }

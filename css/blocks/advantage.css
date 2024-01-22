@@ -1,5 +1,7 @@
 .advantage {
   text-align: center;
+  counter-increment: advantages;
+  position: relative;
 }
 
 .advantage__title {
@@ -19,4 +21,12 @@
   padding-bottom: 87px;
 }
 
-
+.advantage__description::before {
+  content: '— №' counter(advantages) ' —';
+  position: absolute;
+  top: 182px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 18px;
+  color: inherit;
+}

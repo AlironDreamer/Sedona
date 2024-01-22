@@ -1,6 +1,8 @@
 .button {
+  display: inline-block;
   font-family: inherit;
   margin: 0;
+  padding: 8px 15px;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -10,10 +12,38 @@
   color: #ffffff;
   background-color: #756257;
   border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #615048;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.30);
+  background-color: #615048;
+}
+
+.button:focus:not(:active) {
+  outline: 3px solid #83B3D3;
 }
 
 .button--accent {
   background-color: #83B3D3;
+}
+
+.button--accent:hover {
+  background-color: #68a2ca;
+}
+
+.button--accent:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #68a2ca;
+}
+
+.button--accent:focus:not(:active) {
+  outline: 3px solid #756257;
 }
 
 .button--reset {
@@ -23,11 +53,51 @@
   background-color: transparent;
 }
 
-.button--disabled {
+.button--reset:hover {
+  background-color: transparent;
+  opacity: 0.6;
+}
+
+.button--reset:active {
+  background-color: transparent;
+  opacity: 0.3;
+}
+
+.button--disabled, .button--disabled:hover, .button--disabled:active, .button--disabled:focus {
   color: #000000;
+  cursor: default;
   background-color: #f2f2f2;
 }
 
 .button--active {
   background-color: #7DB54F;
+}
+
+.button--active:hover {
+  background-color: #6C9E42;
+}
+
+.button--active:active {
+  background-color: #6C9E42;
+}
+
+.button--active:active > * {
+  opacity: 0.3;
+}
+
+.button--active:focus:not(:active) {
+  background-color: #6C9E42;
+  outline: 3px solid #756257;
+}
+
+.button--display-grid {
+  background: url("../../images/icons/mode-grid-icon.svg") no-repeat 50% 50%;
+}
+
+.button--display-slide {
+  background: url("../../images/icons/mode-slide-icon.svg") no-repeat 50% 50%;
+}
+
+.button--display-list {
+  background: url("../../images/icons/mode-list-icon.svg") no-repeat 50% 50%;
 }

@@ -24,6 +24,7 @@
 @import "blocks/social-list.css";
 @import "blocks/contact-phone.css";
 @import "blocks/copyright.css";
+@import "blocks/input.css";
 
 @import "blocks/inner-header.css";
 @import "blocks/breadcrumbs.css";
@@ -33,7 +34,9 @@
 @import "blocks/catalog.css";
 @import "blocks/product-list.css";
 @import "blocks/product-card.css";
-@import "blocks/pagination-form.css";
+@import "blocks/pagination-select.css";
 @import "blocks/pagination-list.css";
 @import "blocks/pagination.css";
+@import "blocks/modal.css";
+@import "blocks/booking-form.css";
 

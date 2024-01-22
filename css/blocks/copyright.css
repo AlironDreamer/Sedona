@@ -1,8 +1,23 @@
 .copyright {
   display: block;
-  padding: 10px;
+  padding: 18px 22px;
+  justify-self: end;
+}
+
+.copyright:focus:not(:active) {
+  border-radius: 10px;
+  outline: 3px solid #83B3D3;
 }
 
 .copyright__developer-logo {
-  display: block;
+  fill: #000000;
+}
+
+.copyright__developer-logo:hover {
+  fill: #756257;
+}
+
+.copyright__developer-logo:active {
+  fill: #756257;
+  opacity: 0.3;
 }

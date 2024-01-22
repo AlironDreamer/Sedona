@@ -21,7 +21,8 @@
 }
 
 .hotel-offer__button {
-  display: inline-block;
+  padding: 20px 15px;
   min-width: 575px;
   font-size: 20px;
+  border-radius: 10px;
 }
