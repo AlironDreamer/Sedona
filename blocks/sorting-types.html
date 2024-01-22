@@ -5,27 +5,37 @@
   <title>Сортировка гостиниц</title>
 </head>
 <body>
-  <section class="sorting-types">
-    <h2 class="visually-hidden">Результаты поиска</h2>
-    <p class="sorting-types__text-result">Найдено гостиниц: 38</p>
-    <form class="sorting-types__form form">
-      <label class="visually-hidden">Сортировка</label>
-      <select class="form__sorting-select sorting-select">
-        <option class='sorting-select__option' value="cheap">Сначала дешёвое</option>
-        <option class="sorting-select__option" value="expensive">Сначала дорогое</option>
-        <option class='sorting-select__option' value="popular">Сначала популярное</option>
+<section class="sorting-types">
+  <h2 class="visually-hidden">Результаты поиска</h2>
+  <p class="sorting-types__text-result">Найдено гостиниц: 38</p>
+  <form class="sorting-types__form sorting-form form">
+    <label class="visually-hidden">Сортировка</label>
+    <div class="sorting-form__select-wrapper">
+      <select class="sorting-form__select" name="card-sorting" title="Параметры сортировки">
+        <option class='sorting-form__select-option' value="cheap">Сначала дешёвое</option>
+        <option class="sorting-form__select-option" value="expensive">Сначала дорогое</option>
+        <option class='sorting-form__select-option' value="popular">Сначала популярное</option>
       </select>
-      <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
-      <a href="#" class="button button--display-grid">
-        <span class="visually-hidden">Показать карточками</span>
-      </a>
-      <a href="#" class="button button--display-slide">
-        <span class="visually-hidden">Показать слайдами</span>
-      </a>
-      <a href="#" class="button button--display-list">
-        <span class="visually-hidden">Показать списком</span>
-      </a>
-    </form>
-  </section>
+    </div>
+    <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
+    <ul class="sorting-form__types-list">
+      <li class="sorting-form__type">
+        <a href="#" class="sorting-form__type-button button button--display-grid">
+          <span class="visually-hidden">Показать карточками</span>
+        </a>
+      </li>
+      <li class="sorting-form__type">
+        <a href="#" class="sorting-form__type-button button button--display-slide">
+          <span class="visually-hidden">Показать слайдами</span>
+        </a>
+      </li>
+      <li class="sorting-form__type">
+        <a href="#" class="sorting-form__type-button button button--display-list">
+          <span class="visually-hidden">Показать списком</span>
+        </a>
+      </li>
+    </ul>
+  </form>
+</section>
 </body>
 </html>

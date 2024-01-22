@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма бронирования</title>
+</head>
+<body>
+<form class="booking-form form" action="https://echo.htmlacademy.ru" method="post">
+  <label class="booking-form__field booking-form__field--date">
+    <span class="booking-form__field-title">Дата заезда:</span>
+    <input class="booking-form__input input" type="text" name="arrival-date" placeholder="Укажите дату заезда"
+           value="27 апреля 2020">
+    <span class="booking-form__message booking-form__message--error">Мы не можем отправить вас в прошлое.</span>
+  </label>
+  <label class="booking-form__field booking-form__field--date">
+    <span class="booking-form__field-title">Дата выезда:</span>
+    <input class="booking-form__input input" type="text" name="departure-date" placeholder="Укажите дату выезда"
+           value="1 сентября 2021">
+    <span class="booking-form__message">На эти даты есть свободные номера. Пока есть.</span>
+  </label>
+  <div class="booking-form__field booking-form__field--visitors">
+    <span class="booking-form__field-title">Взрослые:</span>
+    <div class="booking-form__input-group">
+      <button class="booking-form__input-button booking-form__input-button--decrease" type="button">
+        <span class="visually-hidden">Уменьшить количество</span>
+      </button>
+      <input class="booking-form__input input" type="number" name="adult-amount" min='1' step='1' placeholder="1"
+             value="2">
+      <button class="booking-form__input-button booking-form__input-button--increase" type="button">
+        <span class="visually-hidden">Увеличить количество</span>
+      </button>
+    </div>
+  </div>
+  <div class="booking-form__field booking-form__field--visitors">
+    <div class="booking-form__title-wrapper">
+      <span class="booking-form__field-title">Дети:</span>
+      <span class="booking-form__field-info">
+            <span class="booking-form__info-text">
+              Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+            </span>
+          </span>
+    </div>
+    <div class="booking-form__input-group">
+      <button class="booking-form__input-button booking-form__input-button--decrease" type="button">
+        <span class="visually-hidden">Уменьшить количество</span>
+      </button>
+      <input class="booking-form__input input" type="number" name="children-amount" placeholder="0" min='0' step='1'
+             value="1">
+      <button class="booking-form__input-button booking-form__input-button--increase" type="button">
+        <span class="visually-hidden">Увеличить количество</span>
+      </button>
+    </div>
+  </div>
+  <button class="booking-form__button button button--accent" type="submit">Найти</button>
+</form>
+</body>
+</html>

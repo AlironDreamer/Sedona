@@ -5,35 +5,37 @@
   <title>Пагинация</title>
 </head>
 <body>
-  <div class="pagination">
-    <ul class="pagination__list pagination-list">
-      <li class="pagination-list__item">
-        <a class="pagination-list__button button button--disabled" href="#">1</a>
-      </li>
-      <li class="pagination-list__item">
-        <a class="pagination-list__button button button--accent" href="#">2</a>
-      </li>
-      <li class="pagination-list__item">
-        <a class="pagination-list__button button button--accent" href="#">3</a>
-      </li>
-      <li class="pagination-list__item">
-        <a class="pagination-list__button button button--accent" href="#">4</a>
-      </li>
-      <li class="pagination-list__item">
-        <a class="pagination-list__button button button--accent" href="#">...</a>
-      </li>
-      <li class="pagination-list__item">
-        <a class="pagination-list__button button button--accent" href="#">10</a>
-      </li>
-    </ul>
-    <form class="pagination__filter form">
-      <label class="form__label">Гостиниц на странице:</label>
-      <select class="form__amount-select amount-select">
-        <option value="4" class="amount-select__option">4</option>
-        <option value="8" class="amount-select__option">8</option>
-        <option value="12" class="amount-select__option">12</option>
+<div class="pagination">
+  <ul class="pagination__list pagination-list">
+    <li class="pagination-list__item">
+      <a class="pagination-list__button button button--disabled">1</a>
+    </li>
+    <li class="pagination-list__item">
+      <a class="pagination-list__button button button--accent" href="#">2</a>
+    </li>
+    <li class="pagination-list__item">
+      <a class="pagination-list__button button button--accent" href="#">3</a>
+    </li>
+    <li class="pagination-list__item">
+      <a class="pagination-list__button button button--accent" href="#">4</a>
+    </li>
+    <li class="pagination-list__item">
+      <a class="pagination-list__button button button--accent" href="#">...</a>
+    </li>
+    <li class="pagination-list__item">
+      <a class="pagination-list__button button button--accent" href="#">10</a>
+    </li>
+  </ul>
+  <div class="pagination__select pagination-select">
+    <label for='card-amount' class="pagination-select__label">Гостиниц на странице:</label>
+    <div class="pagination-select__wrapper">
+      <select id='card-amount' class="pagination-select__amount-select" name="card-amount">
+        <option value="4" class="pagination-select__amount-option">4</option>
+        <option value="8" class="pagination-select__amount-option">8</option>
+        <option value="12" class="pagination-select__amount-option">12</option>
       </select>
-    </form>
+    </div>
   </div>
+</div>
 </body>
 </html>

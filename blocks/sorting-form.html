@@ -5,23 +5,33 @@
   <title>Форма сортировки гостиниц</title>
 </head>
 <body>
-<form class="sorting-form form">
+<form class="sorting-types__form sorting-form form">
   <label class="visually-hidden">Сортировка</label>
-  <select class="sorting-form__select" name="card-sorting">
-    <option class='sorting-form__select-option' value="cheap">Сначала дешёвое</option>
-    <option class="sorting-form__select-option" value="expensive">Сначала дорогое</option>
-    <option class='sorting-form__select-option' value="popular">Сначала популярное</option>
-  </select>
+  <div class="sorting-form__select-wrapper">
+    <select class="sorting-form__select" name="card-sorting" title="Параметры сортировки">
+      <option class='sorting-form__select-option' value="cheap">Сначала дешёвое</option>
+      <option class="sorting-form__select-option" value="expensive">Сначала дорогое</option>
+      <option class='sorting-form__select-option' value="popular">Сначала популярное</option>
+    </select>
+  </div>
   <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
-  <a href="#" class="sorting-form__button button button--display-grid">
-    <span class="visually-hidden">Показать карточками</span>
-  </a>
-  <a href="#" class="sorting-form__button button button--display-slide">
-    <span class="visually-hidden">Показать слайдами</span>
-  </a>
-  <a href="#" class="sorting-form__button button button--display-list">
-    <span class="visually-hidden">Показать списком</span>
-  </a>
+  <ul class="sorting-form__types-list">
+    <li class="sorting-form__type">
+      <a href="#" class="sorting-form__type-button button button--display-grid">
+        <span class="visually-hidden">Показать карточками</span>
+      </a>
+    </li>
+    <li class="sorting-form__type">
+      <a href="#" class="sorting-form__type-button button button--display-slide">
+        <span class="visually-hidden">Показать слайдами</span>
+      </a>
+    </li>
+    <li class="sorting-form__type">
+      <a href="#" class="sorting-form__type-button button button--display-list">
+        <span class="visually-hidden">Показать списком</span>
+      </a>
+    </li>
+  </ul>
 </form>
 </body>
 </html>
