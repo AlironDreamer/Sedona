@@ -1,7 +1,7 @@
 .search__link {
   display: block;
   min-width: 18px;
-  padding: 24px 12px;
+  padding: 22px 12px;
 }
 
 .search__link:hover .search__icon {

@@ -2,7 +2,7 @@
   position: relative;
   display: block;
   min-width: 18px;
-  padding: 24px 12px;
+  padding: 22px 12px;
 }
 
 .user-reaction__counter {
@@ -18,7 +18,7 @@
   color: #ffffff;
   background-color: #7db54f;
   border-radius: 50%;
-
+  overflow: hidden;
 }
 
 .user-reaction__link:hover .user-reaction__icon {

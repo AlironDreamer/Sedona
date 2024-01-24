@@ -3,7 +3,7 @@
   grid-template-columns: 1fr max-content 1fr;
   gap: 30px;
   align-items: center;
-  padding: 40px 62px 30px 62px;
+  padding: 24px 62px 30px 62px;
 }
 
 .page-footer__social-list {

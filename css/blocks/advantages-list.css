@@ -57,6 +57,10 @@
   grid-area: advantage5;
 }
 
+.advantages-list__item--large .advantage {
+  color: #ffffff;
+}
+
 .advantages-list__additions {
   display: grid;
   grid-template-columns: 400px 400px 400px;
@@ -68,6 +72,11 @@
 
 .advantages-list__additions-item {
   position: relative;
+  display: grid;
+  row-gap: 20px;
+  align-content: start;
+  min-height: 384px;
+  padding: 184px 60px 60px;
 }
 
 .advantages-list__additions-title {
@@ -78,14 +87,15 @@
   color: #000000;
   text-align: center;
   margin-top: 0;
-  padding-top: 184px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .advantages-list__additions-item:first-child .advantages-list__additions-title::before {
   content: '';
   position: absolute;
   top: 81px;
+  left: 50%;
+  transform: translate(-50%);
   min-width: 80px;
   height: 80px;
   background: url('../../images/icons/advantage-housing.svg') 50% 50% no-repeat;
@@ -116,7 +126,6 @@
 .advantages-list__additions-text {
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 79px;
   text-align: center;
 }
 
@@ -135,6 +144,20 @@
 
 .advantages-list__item--middle {
   background-color: rgba(131, 179, 211, 0.20);
+}
+
+.advantages-list__block {
+  display: grid;
+  row-gap: 30px;
+  padding: 97px 60px 60px;
+  align-content: start;
+  min-height: 384px;
+}
+
+.advantages-list__image {
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
 
 .advantages-list__additions-item--edge {

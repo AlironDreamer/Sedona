@@ -9,30 +9,12 @@
 
 .pagination-select__wrapper {
   position: relative;
+  min-width: 160px;
 }
 
-.pagination-select__wrapper::after {
-  content: '';
-  position: absolute;
-  top: 22px;
-  right: 21px;
-  width: 12px;
-  height: 7px;
-  background-image: url("../../images/icons/select-dropdown-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
 
 .pagination-select__wrapper:hover .pagination-select__amount-select {
   border-color: #83B3D3;
-}
-
-.pagination-select__wrapper:active {
-  opacity: 0.3;
-}
-
-.pagination-select__wrapper:active .pagination-select__amount-select {
-  opacity: 0.3;
 }
 
 .pagination-select__amount-select:focus:not(:active) {
@@ -41,12 +23,65 @@
 }
 
 .pagination-select__amount-select {
-  font-family: inherit;
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 50px;
   font-size: 18px;
-  color: #333333;
   padding: 13px 55px 12px 17px;
-  min-width: 160px;
+  padding-right: 0;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
   appearance: none;
+  cursor: default;
+  list-style-type: none;
+}
+
+.pagination-select__amount-select::after {
+  content: '';
+  position: absolute;
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+  justify-self: center;
+  align-self: center;
+  width: 12px;
+  height: 7px;
+  background-image: url("../../images/icons/select-dropdown-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.pagination-select__amount-select:active {
+  color: rgba(51, 51, 51, 0.3);
+}
+
+.pagination-select__amount-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 10px 0;
+  list-style-type: none;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.pagination-select__amount-item--active {
+  background-color: #e5e5e5;
+}
+
+.pagination-select__amount-item:not(.pagination-select__amount-item--active):hover {
+  background-color: #f2f2f2;
+}
+
+.pagination-select__amount-item:active {
+  color: rgba(51, 51, 51, 0.3);
+}
+
+.pagination-select__amount {
+  display: block;
+  padding: 8px 20px;
+  color: inherit;
+  text-decoration: none;
 }

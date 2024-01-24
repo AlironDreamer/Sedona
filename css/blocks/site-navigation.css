@@ -12,7 +12,8 @@
   color: #000000;
   text-decoration: none;
   display: block;
-  padding: 20px 17px;
+  padding: 17px;
+  padding-top: 20px;
 }
 
 .site-navigation__link:hover{
@@ -28,7 +29,7 @@
   content: '';
   left: 17px;
   right: 17px;
-  bottom: 0;
+  bottom: -3px;
   height: 2px;
   background-color: #756257;
 }

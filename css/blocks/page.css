@@ -7,6 +7,12 @@ html {
   box-sizing: border-box;
 }
 
+img {
+  height: auto;
+  object-fit: contain;
+  max-width: 100%;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -23,8 +29,4 @@ html {
 
 .page--align {
   margin: 0 auto;
-}
-
-.page__content {
-  margin-top: -4px;
 }

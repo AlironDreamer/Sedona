@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Гостиницы Седоны</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
-  <!--  <link rel="stylesheet" href="css/outline.css">-->
-  <!--  <link rel="stylesheet" href="css/outline-settings.css">-->
 </head>
 <body class="page page--align page--inner-page">
 <header class="page__header page-header">
@@ -146,7 +145,7 @@
               </label>
             </div>
             <div class="filter-form__range-scale">
-              <div class="filter-form__range-bar" style="left: 0px; right: 51px;">
+              <div class="filter-form__range-bar" style="left: 0px; right: 49px;">
                 <button class="filter-form__range-button filter-form__range-button--min" type="button">
                   <span class="visually-hidden">Изменить минимальную цену</span>
                 </button>
@@ -169,32 +168,39 @@
     <p class="sorting-types__text-result">Найдено гостиниц: 38</p>
     <form class="sorting-types__form sorting-form form">
       <label class="visually-hidden">Сортировка</label>
-      <div class="sorting-form__select-wrapper">
-        <select class="sorting-form__select" name="card-sorting" title="Параметры сортировки">
-          <option class='sorting-form__select-option' value="cheap">Сначала дешёвое</option>
-          <option class="sorting-form__select-option" value="expensive">Сначала дорогое</option>
-          <option class='sorting-form__select-option' value="popular">Сначала популярное</option>
-        </select>
-      </div>
+      <details class="sorting-form__select-wrapper">
+        <summary class="sorting-form__select" title="Параметры сортировки">Сначала дешёвые</summary>
+        <ul class="sorting-form__select-menu">
+          <li class="sorting-form__select-item sorting-form__select-item--active">
+            <a class='sorting-form__select-option' href="#">Сначала дешёвые</a>
+          </li>
+          <li class="sorting-form__select-item">
+            <a class='sorting-form__select-option' href="#">Сначала дорогие</a>
+          </li>
+          <li class="sorting-form__select-item">
+            <a class='sorting-form__select-option' href="#">Сначала популярные</a>
+          </li>
+        </ul>
+      </details>
       <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
-      <ul class="sorting-form__types-list">
-        <li class="sorting-form__type">
-          <a href="#" class="sorting-form__type-button button button--display-grid">
-            <span class="visually-hidden">Показать карточками</span>
-          </a>
-        </li>
-        <li class="sorting-form__type">
-          <a href="#" class="sorting-form__type-button button button--display-slide">
-            <span class="visually-hidden">Показать слайдами</span>
-          </a>
-        </li>
-        <li class="sorting-form__type">
-          <a href="#" class="sorting-form__type-button button button--display-list">
-            <span class="visually-hidden">Показать списком</span>
-          </a>
-        </li>
-      </ul>
     </form>
+    <ul class="sorting-types__types-list">
+      <li class="sorting-types__type">
+        <a href="#" class="sorting-types__type-button button button--display-grid">
+          <span class="visually-hidden">Показать карточками</span>
+        </a>
+      </li>
+      <li class="sorting-types__type">
+        <a href="#" class="sorting-types__type-button button button--display-slide">
+          <span class="visually-hidden">Показать слайдами</span>
+        </a>
+      </li>
+      <li class="sorting-types__type">
+        <a href="#" class="sorting-types__type-button button button--display-list">
+          <span class="visually-hidden">Показать списком</span>
+        </a>
+      </li>
+    </ul>
   </section>
   <section class="catalog">
     <h2 class="visually-hidden">Каталог гостиниц</h2>
@@ -294,14 +300,21 @@
       </li>
     </ul>
     <div class="pagination__select pagination-select">
-      <label for='card-amount' class="pagination-select__label">Гостиниц на странице:</label>
-      <div class="pagination-select__wrapper">
-        <select id='card-amount' class="pagination-select__amount-select" name="card-amount">
-          <option value="4" class="pagination-select__amount-option">4</option>
-          <option value="8" class="pagination-select__amount-option">8</option>
-          <option value="12" class="pagination-select__amount-option">12</option>
-        </select>
-      </div>
+      <label class="pagination-select__label">Гостиниц на странице:</label>
+      <details class="pagination-select__wrapper">
+        <summary id='card-amount' class="pagination-select__amount-select">4</summary>
+        <ul class="pagination-select__amount-menu">
+          <li class="pagination-select__amount-item pagination-select__amount-item--active">
+            <a class="pagination-select__amount">4</a>
+          </li>
+          <li class="pagination-select__amount-item">
+            <a class="pagination-select__amount">8</a>
+          </li>
+          <li class="pagination-select__amount-item">
+            <a class="pagination-select__amount">12</a>
+          </li>
+        </ul>
+      </details>
     </div>
   </div>
   <section class="subscription-offer subscription-offer--catalog">

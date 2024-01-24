@@ -57,7 +57,7 @@
 .product-card__description {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 26px;
+  column-gap: 18px;
   margin: 0;
   padding: 0;
   grid-area: desc;
@@ -73,6 +73,7 @@
 
 .product-card__fav-button {
   grid-area: fav;
+  margin-left: -4px;
 }
 
 .product-card__star-rate {
@@ -101,6 +102,7 @@
 }
 
 .product-card__rating {
+  font-size: 16px;
   margin: 0;
   justify-self: end;
   min-width: 160px;

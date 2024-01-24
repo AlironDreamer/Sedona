@@ -1,7 +1,7 @@
 .subscription-offer {
   color: #000000;
   text-align: center;
-  padding: 94px 200px 93px;
+  padding: 94px 200px 94px;
 }
 
 .subscription-offer--catalog {
@@ -17,6 +17,10 @@
   margin-bottom: 29px;
 }
 
+.subscription-offer--catalog .subscription-offer__title {
+  margin-bottom: 46px;
+}
+
 .subscription-offer__description {
   font-size: 22px;
   line-height: 26px;
@@ -27,6 +31,6 @@
 .subscription-offer--with-background {
   color: #ffffff;
   background-image: url("../../images/other/subscribe_bg.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }

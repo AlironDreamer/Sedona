@@ -10,23 +10,18 @@
   text-align: center;
   color: #000000;
   text-transform: uppercase;
-  padding-top: 97px;
   margin-top: 0;
-  margin-bottom: 81px;
+  margin-bottom: 0;
+  order: -1;
 }
 
 .advantage__description {
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 87px;
 }
 
-.advantage__description::before {
+.advantage::before {
   content: '— №' counter(advantages) ' —';
-  position: absolute;
-  top: 182px;
-  left: 50%;
-  transform: translate(-50%);
   font-size: 18px;
   color: inherit;
 }

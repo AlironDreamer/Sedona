@@ -9,11 +9,33 @@
 }
 
 .catalog__button-wrapper {
+  position: relative;
   display: flex;
   justify-content: center;
 }
 
+.catalog__button-wrapper::before {
+  position: absolute;
+  content: "";
+  top: -30px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #e6e6e6;
+}
+
+.catalog__button-wrapper::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  height: 1px;
+  background-color: #e6e6e6;
+}
+
 .catalog__button {
+  padding: 18px 17px;
   font-size: 20px;
   min-width: 620px;
 }

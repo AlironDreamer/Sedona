@@ -3,6 +3,10 @@
   grid-template-columns: 1fr 200px;
 }
 
+.subscription-form__field {
+  display: flex;
+}
+
 .subscription-form__input {
   padding: 17px 22px;
   width: 100%;
