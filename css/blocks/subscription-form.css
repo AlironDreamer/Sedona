@@ -18,19 +18,19 @@
 }
 
 .subscription-form__input:hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .subscription-form__input:focus {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .subscription-form__input--error:focus {
-  outline: 2px solid #FF5757;
+  outline: 2px solid #ff5757;
 }
 
 .subscription-form__input::placeholder {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;

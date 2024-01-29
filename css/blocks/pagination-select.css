@@ -14,31 +14,31 @@
 
 
 .pagination-select__wrapper:hover .pagination-select__amount-select {
-  border-color: #83B3D3;
+  border-color: #83b3d3;
 }
 
 .pagination-select__amount-select:focus:not(:active) {
   outline: none;
-  border-color: #83B3D3;
+  border-color: #83b3d3;
 }
 
 .pagination-select__amount-select {
-  display: grid;
   position: relative;
+  display: grid;
   grid-template-columns: 1fr 50px;
-  font-size: 18px;
   padding: 13px 55px 12px 17px;
   padding-right: 0;
-  border: 2px solid #E6E6E6;
+  font-size: 18px;
+  border: 2px solid #e6e6e6;
   border-radius: 4px;
+  list-style-type: none;
   appearance: none;
   cursor: default;
-  list-style-type: none;
 }
 
 .pagination-select__amount-select::after {
-  content: '';
   position: absolute;
+  content: "";
   grid-column: 2 / -1;
   grid-row: 1 / 2;
   justify-self: center;

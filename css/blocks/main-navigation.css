@@ -3,13 +3,12 @@
   grid-template-columns: max-content 1fr max-content;
   padding: 0 70px;
   gap: 30px;
-  min-height: 65px;
 }
 
 .main-navigation__site-navigation {
   margin: 0;
-  padding: 0;
   margin-right: auto;
+  padding: 0;
 }
 
 .main-navigation__user-navigation {

@@ -3,20 +3,20 @@
 }
 
 .advantages__title {
+  margin: 0 240px 31px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin: 0 240px 31px;
 }
 
 .advantages__description {
+  margin: 0 240px 80px;
   font-size: 22px;
   line-height: 36px;
   text-align: center;
-  margin: 0 240px 80px;
 }
 
 .advantages__list {

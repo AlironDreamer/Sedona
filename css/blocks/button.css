@@ -1,8 +1,8 @@
 .button {
   display: inline-block;
-  font-family: inherit;
   margin: 0;
   padding: 8px 15px;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -12,8 +12,8 @@
   color: #ffffff;
   background-color: #756257;
   border: none;
-  cursor: pointer;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -21,16 +21,16 @@
 }
 
 .button:active {
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
   background-color: #615048;
 }
 
 .button:focus:not(:active) {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .button--accent {
-  background-color: #83B3D3;
+  background-color: #83b3d3;
 }
 
 .button--accent:hover {
@@ -63,22 +63,25 @@
   opacity: 0.3;
 }
 
-.button--disabled, .button--disabled:hover, .button--disabled:active, .button--disabled:focus {
+.button--disabled,
+.button--disabled:hover,
+.button--disabled:active,
+.button--disabled:focus {
   color: #000000;
-  cursor: default;
   background-color: #f2f2f2;
+  cursor: default;
 }
 
 .button--active {
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 .button--active:hover {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .button--active:active {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .button--active:active > * {
@@ -86,7 +89,7 @@
 }
 
 .button--active:focus:not(:active) {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
   outline: 3px solid #756257;
 }
 

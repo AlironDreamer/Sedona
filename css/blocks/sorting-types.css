@@ -2,32 +2,29 @@
   display: grid;
   grid-template-columns: 1fr 287px auto;
   column-gap: 81px;
-  padding-top: 44px;
-  padding-left: 72px;
-  padding-right: 72px;
-  padding-bottom: 53px;
+  padding: 44px 72px 53px;
 }
 
 .sorting-types__text-result {
+  margin-top: 3px;
+  margin-right: auto;
+  margin-bottom: 0;
   font-size: 30px;
   font-weight: 700;
   line-height: 39px;
   text-transform: uppercase;
   color: #000000;
-  margin-top: 3px;
-  margin-right: auto;
-  margin-bottom: 0;
 }
 
 .sorting-types__types-list {
-  margin: 0;
-  padding: 0;
-  max-width: 212px;
-  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   column-gap: 8px;
   row-gap: 8px;
+  margin: 0;
+  padding: 0;
+  max-width: 212px;
+  list-style-type: none;
 }
 
 .sorting-types__type-button {
@@ -35,20 +32,18 @@
   width: 48px;
   height: 48px;
   min-width: 16px;
-  padding-top: 19px;
-  padding-bottom: 19px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 19px 16px;
   border: 2px solid #e6e6e6;
   border-radius: 4px;
 }
 
-.sorting-types__type-button:hover, .sorting-form__type-button:focus {
+.sorting-types__type-button:hover,
+.sorting-form__type-button:focus {
   background-color: transparent;
-  border-color: #83B3D3;
+  border-color: #83b3d3;
 }
 
 .sorting-types__type-button:active {
   background-color: transparent;
-  border-color:#000000;
+  border-color: #000000;
 }

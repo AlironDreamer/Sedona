@@ -3,9 +3,9 @@
 }
 
 .catalog-wrapper {
+  padding: 35px 72px 79px;
   color: #ffffff;
   background-image: url("../../images/other/catalog_filters_bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 35px 72px 79px;
 }

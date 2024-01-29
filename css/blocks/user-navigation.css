@@ -2,8 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  list-style-type: none;
   max-width: 306px;
+  list-style-type: none;
 }
 
 .user-navigation__link {

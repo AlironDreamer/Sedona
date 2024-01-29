@@ -15,17 +15,17 @@
   padding: 12px 55px 12px 19px;
   padding-right: 0;
   min-width: 287px;
-  font-size: 18px;
   min-height: 48px;
-  border: 2px solid #E6E6E6;
+  font-size: 18px;
+  border: 2px solid #e6e6e6;
   border-radius: 4px;
   cursor: default;
   list-style-type: none;
 }
 
 .sorting-form__select::after {
-  content: '';
   position: absolute;
+  content: "";
   width: 12px;
   height: 7px;
   grid-column: 2 / -1;
@@ -38,7 +38,7 @@
 }
 
 .sorting-form__select-wrapper:hover .sorting-form__select {
-  border-color: #83B3D3;
+  border-color: #83b3d3;
 }
 
 .sorting-form__select-wrapper:active {
@@ -47,7 +47,7 @@
 
 .sorting-form__select:focus:not(:active) {
   outline: none;
-  border-color: #83B3D3;
+  border-color: #83b3d3;
 }
 
 .sorting-form__select-menu {

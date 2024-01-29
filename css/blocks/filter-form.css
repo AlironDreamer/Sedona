@@ -35,42 +35,42 @@
 }
 
 .filter-form__control-wrapper {
-  display: block;
   position: relative;
+  display: block;
   padding-left: 39px;
 }
 
-.filter-form__control-input[type='checkbox']:hover + .filter-form__control-mark {
-  background-color: rgba(255, 255, 255, 0.60);
+.filter-form__control-input[type="checkbox"]:hover + .filter-form__control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
-.filter-form__control-input[type='active']:active + .filter-form__control-mark {
-  background-color: rgba(255, 255, 255, 0.30);
+.filter-form__control-input[type="active"]:active + .filter-form__control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .filter-form__control-input:focus:not(:active) + .filter-form__control-mark {
-  outline: 3px solid #83B3D3;
-  background-color: rgba(255, 255, 255, 0.60);
+  outline: 3px solid #83b3d3;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
-.filter-form__control-input[type='checkbox']:checked + .filter-form__control-mark {
-  background-image: url(../../images/icons/tick-icon.svg);
+.filter-form__control-input[type="checkbox"]:checked + .filter-form__control-mark {
+  background-image: url("../../images/icons/tick-icon.svg");
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-.filter-form__control-input[type='radio'] + .filter-form__control-mark {
+.filter-form__control-input[type="radio"] + .filter-form__control-mark {
   border-radius: 50%;
 }
 
-.filter-form__control-input[type='radio']:checked + .filter-form__control-mark::before {
+.filter-form__control-input[type="radio"]:checked + .filter-form__control-mark::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 5px;
   left: 5px;
   width: 10px;
   height: 10px;
-  background-color: #3F5E72;
+  background-color: #3f5e72;
   border-radius: 50%;
 }
 
@@ -103,9 +103,9 @@
 }
 
 .filter-form__range-button {
+  position: absolute;
   margin: 0;
   padding: 0;
-  position: absolute;
   width: 20px;
   height: 20px;
   background-color: #ffffff;
@@ -115,17 +115,17 @@
 }
 
 .filter-form__range-button:hover {
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 .filter-form__range-button:active {
-  outline: 2px solid #83B3D3;
-  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.40);
+  outline: 2px solid #83b3d3;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
 }
 
 .filter-form__range-button:focus:not(:active) {
-  outline: 3px solid #83B3D3;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  outline: 3px solid #83b3d3;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 .filter-form__range-button--min {
@@ -144,8 +144,8 @@
 }
 
 .filter-form__filter-labels::before {
-  content: '';
   position: relative;
+  content: "";
   width: 2px;
   background-color: #ffffff;
 }
@@ -168,24 +168,24 @@
 }
 
 .filter-form__range-text {
-  color: #ffffff;
   display: flex;
   align-self: center;
   justify-self: center;
   grid-column: -2 / -1;
   grid-row: 1 / 2;
+  color: #ffffff;
   opacity: 0.3;
 }
 
 .filter-form__range-input {
   padding: 13px 50px 10px 15px;
-  color: #ffffff;
-  font-size: 18px;
   margin: 0;
   width: 100%;
   grid-column: 1 / -1;
   grid-row: 1 / 2;
   font-family: inherit;
+  font-size: 18px;
+  color: #ffffff;
   background-color: transparent;
   appearance: textfield;
   border: 2px solid #ffffff;
@@ -207,7 +207,7 @@
 
 .filter-form__range-input:focus:not(:active) {
   background-color: #756257;
-  outline: 3px solid #81B3D2;
+  outline: 3px solid #81b3d2;
 }
 
 .filter-form__filter-label:first-of-type .filter-form__range-input {
@@ -236,7 +236,7 @@
 }
 
 .filter-form__button:last-child:focus:not(:active) {
-  outline: 3px solid #81B3D2;
+  outline: 3px solid #81b3d2;
   outline-offset: -3px;
 }
 

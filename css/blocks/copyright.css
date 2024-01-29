@@ -6,7 +6,7 @@
 
 .copyright:focus:not(:active) {
   border-radius: 10px;
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .copyright__developer-logo {

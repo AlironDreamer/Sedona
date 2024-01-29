@@ -24,7 +24,7 @@
 }
 
 .booking-form__field--date .booking-form__input:hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .booking-form__field--date .booking-form__input:active {
@@ -34,7 +34,7 @@
 
 .booking-form__field--date .booking-form__input:focus:not(:active) {
   background-color: #e6e6e6;
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .booking-form__title-wrapper {
@@ -52,44 +52,44 @@
   position: relative;
   width: 25px;
   height: 25px;
-  border-radius: 50%;
-  background-color: #83B3D3;
   margin-right: 3px;
   margin-left: 10px;
+  border-radius: 50%;
+  background-color: #83b3d3;
   background-image: url("../../images/icons/info-icon.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .booking-form__field-info:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .booking-form__info-text {
-  display: none;
   position: absolute;
   left: -115px;
   top: 40px;
+  z-index: 6;
+  display: none;
   width: 256px;
+  padding: 15px 18px 18px 22px;
   line-height: 20px;
   font-size: 16px;
-  padding: 15px 18px 18px 22px;
   color: #ffffff;
   background-color: #333333;
   border-radius: 10px;
-  z-index: 6;
 }
 
 .booking-form__info-text::before {
   position: absolute;
-  content: '';
+  content: "";
   top: -9px;
   left: 50%;
-  transform: translate(-50%);
   width: 19px;
   height: 9px;
   background-image: url("../../images/icons/info-triangle.svg");
   background-repeat: no-repeat;
+  transform: translate(-50%);
 }
 
 .booking-form__field-info:hover .booking-form__info-text {
@@ -105,12 +105,12 @@
 
 .booking-form__input {
   width: 100%;
+  padding: 5px 70px 5px 19px;
   line-height: 40px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
-  padding: 5px 70px 5px 19px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
   border-radius: 4px;
 }
@@ -127,10 +127,10 @@
 
 .booking-form__input-button {
   position: relative;
+  z-index: 1;
   width: 50px;
   height: 50px;
   border: none;
-  z-index: 1;
   background-color: transparent;
 }
 
@@ -142,13 +142,13 @@
 }
 
 .booking-form__input-button--decrease::after {
-  content: '';
+  content: "";
   width: 25px;
   height: 25px;
-  opacity: 0.3;
   background-image: url("../../images/icons/minus-icon.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  opacity: 0.3;
 }
 
 .booking-form__input-button--increase {
@@ -159,13 +159,13 @@
 }
 
 .booking-form__input-button--increase::after {
-  content: '';
+  content: "";
   width: 25px;
   height: 25px;
-  opacity: 0.3;
   background-image: url("../../images/icons/plus-icon.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  opacity: 0.3;
 }
 
 .booking-form__input-button:hover::after {
@@ -177,9 +177,9 @@
 }
 
 .booking-form__input-button:focus:not(:active)::after {
-  opacity: 1;
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
   border-radius: 4px;
+  opacity: 1;
 }
 
 .booking-form__input-button:disabled {
@@ -188,22 +188,22 @@
 
 
 .booking-form__input-group .booking-form__input:hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .booking-form__input-group .booking-form__input:active {
-  background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 .booking-form__input-group .booking-form__input:focus:not(:active) {
-  background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 .booking-form__message {
-  font-size: 16px;
   grid-column: 2 / -1;
+  font-size: 16px;
 }
 
 .booking-form__message--error {
@@ -211,7 +211,7 @@
 }
 
 .booking-form__button {
-  font-size: 20px;
   min-width: 575px;
   grid-column: 1 / -1;
+  font-size: 20px;
 }

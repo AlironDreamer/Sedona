@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-template-areas: "advantage1 advantage1 advantage1"
-                       "advantage2 advantage2 advantage2"
-                       "advantage3 advantage4 advantage5";
+    "advantage2 advantage2 advantage2"
+    "advantage3 advantage4 advantage5";
   padding: 0;
   list-style-type: none;
   counter-reset: advantages;
@@ -13,7 +13,7 @@
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-template-areas: "advtext1 advimg1 advimg1"
-                       "subadv subadv subadv";
+    "subadv subadv subadv";
   grid-area: advantage1;
 }
 
@@ -80,47 +80,47 @@
 }
 
 .advantages-list__additions-title {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #000000;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
+  color: #000000;
 }
 
 .advantages-list__additions-item:first-child .advantages-list__additions-title::before {
-  content: '';
   position: absolute;
+  content: "";
   top: 81px;
   left: 50%;
-  transform: translate(-50%);
   min-width: 80px;
   height: 80px;
-  background: url('../../images/icons/advantage-housing.svg') 50% 50% no-repeat;
+  background: url("../../images/icons/advantage-housing.svg") 50% 50% no-repeat;
+  transform: translate(-50%);
 }
 
 .advantages-list__additions-item:nth-child(2) .advantages-list__additions-title::before {
-  content: '';
   position: absolute;
+  content: "";
   top: 81px;
   left: 50%;
-  transform: translateX(-50%);
   min-width: 80px;
   height: 80px;
-  background: url('../../images/icons/advantage-food.svg') 50% 50% no-repeat;
+  background: url("../../images/icons/advantage-food.svg") 50% 50% no-repeat;
+  transform: translateX(-50%);
 }
 
 .advantages-list__additions-item:last-child .advantages-list__additions-title::before {
-  content: '';
   position: absolute;
+  content: "";
   top: 81px;
   left: 50%;
-  transform: translateX(-50%);
   min-width: 80px;
   height: 80px;
-  background: url('../../images/icons/advantage-souvenirs.svg') 50% 50% no-repeat;
+  background: url("../../images/icons/advantage-souvenirs.svg") 50% 50% no-repeat;
+  transform: translateX(-50%);
 }
 
 .advantages-list__additions-text {
@@ -130,11 +130,12 @@
 }
 
 .advantages-list__item--large {
-  background-color: #83B3D3;
+  background-color: #83b3d3;
 }
 
 
-.advantages-list__item--large .advantage__title, .advantages-list__item--large .advantage__description{
+.advantages-list__item--large .advantage__title,
+.advantages-list__item--large .advantage__description {
   color: #ffffff;
 }
 
@@ -143,7 +144,7 @@
 }
 
 .advantages-list__item--middle {
-  background-color: rgba(131, 179, 211, 0.20);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-list__block {

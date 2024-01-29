@@ -1,12 +1,12 @@
 .social-list {
-  padding: 0;
   display: flex;
+  padding: 0;
   flex-wrap: wrap;
   align-content: center;
   max-width: 182px;
-  list-style-type: none;
   column-gap: 3px;
   row-gap: 10px;
+  list-style-type: none;
 }
 
 .social-list__item:nth-child(4) {
@@ -23,11 +23,11 @@
 }
 
 .social-list__icon {
-  fill: #83B3D3;
+  fill: #83b3d3;
 }
 
 .social-list__link:hover .social-list__icon {
-  fill: #68A2CA;
+  fill: #68a2ca;
 }
 
 .social-list__link:active .social-list__icon {
@@ -36,5 +36,5 @@
 
 .social-list__link:focus:not(:active) {
   border-radius: 10px;
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
